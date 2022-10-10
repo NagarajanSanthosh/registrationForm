@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Reg
+        </title>
+        <script type="text/javascript">
+            function fun(){
+                alert("Name : "+form1.userName.value);
+                alert("Password : "+form1.pwd.value);
+                alert("Account Type : "+form1.MyMenu.value);
+                alert("Account Number : "+form1.accNum.value);
+            }
+        </script>
+    </head>
+    <body bgcolor="gray">
+            <form name="form1" onsubmit="fun()">
+                <table>
+                    <tr><td><b>Name : </b></td>
+                    <td><input type="text" name="userName"></td>
+                    </tr>
+                    <tr><td><b>Password : </b></td>
+                    <td><input type="password" name="pwd"></td></tr>
+                    <tr><td><b>Account type : </b></td>
+                    <td><select name="MyMenu">
+                        <option value="Savings Account">Savings Account</option>
+                        <option value="Current Account">Current Account</option>
+                    </select></td></tr>
+                    <tr><td>Account Number : </td>
+                    <td><input type="number" name="accNum"></td>
+                <td></td></tr>
+                </table>
+                <input type="submit" value="submit">
+                <input type="reset" value="clear">
+        </form>
+    </body>
+</html>
