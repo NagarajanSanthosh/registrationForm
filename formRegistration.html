@@ -6,10 +6,27 @@
         </title>
         <script type="text/javascript">
             function fun(){
-                alert("Name : "+form1.userName.value);
-                alert("Password : "+form1.pwd.value);
-                alert("Account Type : "+form1.MyMenu.value);
-                alert("Account Number : "+form1.accNum.value);
+                if(document.form1.userName.value==""){
+                alert("Provide first name ");
+                    document.form1.userName.focus();
+                    return false;  
+                }
+                 if(document.form1.pwd.value==""){
+                    alert("Enter Password");
+                    document.form1.pwd.focus();
+                    return false;  
+                }
+                 if(document.form1.MyMenu.value==""){
+                alert("Select Account Type");
+                    document.form1.MyMenu.focus();
+                    return false;  
+                }
+                if(document.form1.accNum.value==""){
+                    alert("Enter Account Number");
+                    document.form1.accNum.focus();
+                    return false;
+            }
+                return true;
             }
         </script>
     </head>
